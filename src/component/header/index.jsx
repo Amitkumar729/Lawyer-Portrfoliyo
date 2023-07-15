@@ -16,6 +16,8 @@ import {
 } from "../../styles/component/header";
 import { MyLink } from "../../styles/common";
 import Sidebar from "./sidebar";
+
+
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
