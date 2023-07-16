@@ -17,10 +17,9 @@ import profilePdf from "../../assets/documents/profile_2023.pdf";
 export const AboutUs = () => {
 
   const downloadPdf = (url) => {
-    const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", fileName);
+    aTag.setAttribute("download", "profile_2023");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
