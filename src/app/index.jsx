@@ -1,10 +1,16 @@
+import { GlobalStyle, Layout } from "../styles/common";
 import Router from "../router";
-const App = () =>{
+const App = () => {
   return (
-    <div className="App">
-       <Router/>
-    </div>
+    <>
+      <GlobalStyle />
+      <Layout>
+        <div className="appWrapper">
+          <Router />
+        </div>
+      </Layout>
+    </>
   );
-}
+};
 
 export default App;

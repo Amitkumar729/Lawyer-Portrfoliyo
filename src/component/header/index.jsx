@@ -43,7 +43,7 @@ const Header = () => {
           <MenuIcon_styled onClick={() => setSidebarOpen(!isSidebarOpen)} />
         </HeaderRightWrap>
       </HeaderWraper>
-      {/*<Sidebar isSidebarOpen={isSidebarOpen} headerElement={element} />  */}
+      <Sidebar isSidebarOpen={isSidebarOpen} headerElement={element} /> 
     </HeaderContainer>
   );
 };
