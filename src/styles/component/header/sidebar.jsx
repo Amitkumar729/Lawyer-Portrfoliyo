@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
   width: 100%;
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 250px;
+  min-width: 250px;
   min-height: 800px;
   box-shadow: -6px 0px 15px 3px #787878;
   padding: 0px 10px;
@@ -17,13 +17,16 @@ export const SidebarContainer = styled.div`
   top: 5px;
   border-radius: 3px;
   transition: margin 1.5s;
-  margin-left: ${({ isSidebarOpen }) => (!isSidebarOpen ? "-300px" : "")};
+  margin-left: ${({ isSidebarOpen }) => (!isSidebarOpen ? "-350px" : "")};
   a.active {
     background-color: orange;
     border-radius: 3px;
     color: white;
   }
   z-index: 10;
+  @media  (min-width: 1050px){
+    display: none;
+  }
 `;
 
 export const SidebarWrap = styled.div`

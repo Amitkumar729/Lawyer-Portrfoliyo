@@ -3,16 +3,14 @@ import {
   BannerContainer,
   BannerWrapper,
   Image,
-} from "../../styles/component/header/banner";
-import dummy from "../../images/banner.jpg";
-
+} from "../../styles/component/banner";
+import dummy from "../../assets/images/banner.png";
 
 const Banner = () => {
   return (
     <BannerContainer>
       <BannerWrapper>
-      <img src={dummy} alt="" style =  {{height: "100%", width: "100%"}} />
-        
+        <img src={dummy} alt="" />
       </BannerWrapper>
     </BannerContainer>
   );

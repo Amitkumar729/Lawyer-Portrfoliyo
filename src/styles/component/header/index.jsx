@@ -80,4 +80,3 @@ export const HeaderElemntWrap = styled.div`
     background-color: #facd79;
   }
 `;
-
