@@ -9,7 +9,7 @@ import CallIcon from "@mui/icons-material/Call";
 export const element = [
   { name: "Home", to: "/", icon: HomeIcon },
   { name: "Profile", to: "/profile", icon: PersonIcon },
-  { name: "Practice Area", to: "/practicearea", icon: LocalLibraryIcon },
+  { name: "Practice Area", to: "/practice-area", icon: LocalLibraryIcon },
   {
     name: "Reasearch & Publication",
     to: "/research&publication",
