@@ -1,5 +1,5 @@
 import { HeadingWrap } from "../../styles/component/heading";
 
-export const Heading = ({ velue }) => {
-  return <HeadingWrap>{velue}</HeadingWrap>;
+export const Heading = ({ value }) => {
+  return <HeadingWrap>{value}</HeadingWrap>;
 };
