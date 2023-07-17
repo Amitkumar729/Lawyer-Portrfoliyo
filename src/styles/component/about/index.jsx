@@ -13,6 +13,7 @@ export const LeftAboutWrap = styled.div`
   flex-direction: column;
   display: flex;
   gap: 12px;
+  background-color: #FAF9F6;
   
 `;
 
@@ -20,6 +21,7 @@ export const HeadingWrapper = styled.div`
 border: 1px solid green;
 display: flex;
 justify-content: center;
+
 `
 
 export const AboutHeading = styled.div`
@@ -31,6 +33,8 @@ export const AboutHeading = styled.div`
 
 export const AboutParagraphSec = styled.p`
 border: 1px solid red;
+font-size: 17px;
+/* font-weight: 500; */
 `;
 
 
