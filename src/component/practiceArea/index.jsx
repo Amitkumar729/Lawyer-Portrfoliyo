@@ -1,3 +1,4 @@
+import { Practices } from "../../constant/practiceArea";
 import {
   ParaGraph,
   PracticeElementTitle,
@@ -18,13 +19,14 @@ export const PracticeArea = () => {
         facere veritatis libero eum?
       </ParaGraph>
       <Practicess>
-        <PracticeElementWrap>
-          <PracticeElementTitle>Criminals</PracticeElementTitle>
-          <ParaGraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam
-          </ParaGraph>
-        </PracticeElementWrap>
+        {Practices.map((item, index) => {
+          return (
+            <PracticeElementWrap>
+              <PracticeElementTitle>{item.title}</PracticeElementTitle>
+              <ParaGraph>{item.description}</ParaGraph>
+            </PracticeElementWrap>
+          );
+        })}
       </Practicess>
     </PracticeWrap>
   );
