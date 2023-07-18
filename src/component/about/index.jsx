@@ -7,6 +7,8 @@ import {
   RightAboutWrap,
   HeadingWrapper,
   DownloadButton,
+  PdfData,
+  ImgaePdfWrap,
 } from "../../styles/component/about";
 import aboutPhoto from "../../assets/images/about_photo.jpg";
 import { Heading } from "../heading";
@@ -27,6 +29,7 @@ export const AboutUs = () => {
   }
 
   return (
+    <>
     <AboutWrapper>
       <LeftAboutWrap>
       <HeadingWrapper>
@@ -56,5 +59,9 @@ export const AboutUs = () => {
         </ImageWrap>
       </RightAboutWrap>
     </AboutWrapper>
+    <PdfData>
+        <ImgaePdfWrap></ImgaePdfWrap>
+    </PdfData>
+    </>
   );
 };

@@ -9,66 +9,66 @@ export const AboutWrapper = styled.div`
 export const LeftAboutWrap = styled.div`
   width: 100%;
   min-height: 350px;
-  border: 1px solid red;
   flex-direction: column;
   display: flex;
   gap: 12px;
-  background-color: #FAF9F6;
-  
+  /* background-color: #FAF9F6; */
 `;
 
 export const HeadingWrapper = styled.div`
-border: 1px solid green;
-display: flex;
-justify-content: center;
-
-`
+  display: flex;
+  justify-content: center;
+`;
 
 export const AboutHeading = styled.div`
   font-size: 28px;
   font-weight: 500;
-   
+  color: #180d33;
 `;
-
 
 export const AboutParagraphSec = styled.p`
-border: 1px solid red;
-font-size: 17px;
-/* font-weight: 500; */
+  font-size: 17px;
 `;
-
 
 export const DownloadButton = styled.div`
-/* border: 1px solid red; */
-display: flex;
-align-items: center;
-width: 180px;
-gap: 10px;
-cursor: pointer;
-background-color: orange;
-color: white;
-border-radius: 5px;
-font-size: 16px;
-/* transition: background-color 50ms; */
-&:hover{
-  background-color: #facd79;
-  /* color: #facd79; */
-  color: black;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #180d33;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  &:hover {
+    color: orange;
+  }
 `;
-
 
 export const RightAboutWrap = styled.div`
   width: 100%;
   min-height: 350px;
-  border: 1px solid orange;
 `;
 export const ImageWrap = styled.div`
-height: 300px;
-img {
+  height: 300px;
+  img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
-}
+  }
 `;
+
+
+export const PdfData = styled.div`
+  border: 1px solid red;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const ImgaePdfWrap = styled.div`
+border: 3px solid gray;
+height: 100%;
+width: 650px;
+`
