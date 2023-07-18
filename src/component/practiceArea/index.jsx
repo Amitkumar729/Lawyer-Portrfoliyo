@@ -23,7 +23,7 @@ export const PracticeArea = () => {
           return (
             <PracticeElementWrap>
               <PracticeElementTitle>{item.title}</PracticeElementTitle>
-              <ParaGraph>{item.description}</ParaGraph>
+              {/* <ParaGraph>{item.description}</ParaGraph> */}
             </PracticeElementWrap>
           );
         })}

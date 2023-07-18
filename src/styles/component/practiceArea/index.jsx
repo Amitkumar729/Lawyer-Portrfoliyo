@@ -24,7 +24,7 @@ export const Practicess = styled.div`
 export const PracticeElementWrap = styled.div`
   width: 100%;
   max-width: 250px;
-  min-height: 200px;
+  /* min-height: 200px; */
   padding: 5px;
   background-color: white;
   display: flex;
