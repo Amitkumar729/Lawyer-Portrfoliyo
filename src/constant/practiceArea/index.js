@@ -1,62 +1,73 @@
 export const Practices = [
   {
     title: "Arbitration",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
   },
   {
     title: "Litigation",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
   },
   {
     title: "PNGRB",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
   },
   {
     title: "Advisory",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
   },
   {
-    title: "Practice related to Insolvencyand Bankryptcy Code, 2016",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+    title: "Central Excise",
   },
   {
-    title: "Companies Laws including SARFAESI Act, 2002",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+    title: "Sales Tax",
   },
   {
-    title: "Laws related to Oil & Gas Sector",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+    title: "NCLT",
   },
   {
-    title: "Custom, Excise and Service tax before CESTAT",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+    title: "NCLAT",
+  },
+  {
+    title: "PNGRB",
+  },
+  {
+    title: "APTEL",
+  },
+  {
+    title: "RERA",
+  },
+  {
+    title: "Consumer Forum",
+  },
+  {
+    title: "District Court",
   },
   {
     title: "Real Estate Matters",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+  },
+  {
+    title: "Banking, Finance & Insurance",
+  },
+  {
+    title: "Laws Related to Oil & Gas Sector",
+  },
+
+  {
+    title: "Compliance & Related Documentation",
+  },
+  // {
+  //   title: "Practice related to Insolvencyand Bankryptcy Code, 2016",
+  // },
+  {
+    title: "Companies Laws including SARFAESI Act, 2002",
+  },
+  {
+    title: "Custom, Excise and Service tax before CESTAT",
   },
   {
     title: "Contract drafting, vetting & negotiation",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+  },
+ 
+  {
+    title: "Apperance before Hon'ble Supreme Court"
   },
   {
-    title: "Compliance & related documentation",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
-  },
-  {
-    title: "Apperance before Hon'ble Supreme Court, High Court of Delhi, NCLT, NCLAT, PNGRB, APTEL, RERA, Consumer Forum, District Court",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum maiores fugiat quaerat odit quia veniam labore dolores ut? Ipsam ",
+    title: "High Court of Delhi",
   },
 ];

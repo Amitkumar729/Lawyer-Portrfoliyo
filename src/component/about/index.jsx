@@ -28,40 +28,40 @@ export const AboutUs = () => {
 
   return (
     <>
-    <AboutWrapper>
-      <LeftAboutWrap>
-        <HeadingWrapper>
-          <Heading value="WHO WE ARE" />
-        </HeadingWrapper>
+      <AboutWrapper>
+        <LeftAboutWrap>
+          <HeadingWrapper>
+            <Heading value="WHO WE ARE" />
+          </HeadingWrapper>
 
-        <div>
-          <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
-          <AboutParagraphSec>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
-            dolorum sequi, quibusdam autem, quidem corrupti voluptate deleniti!
-            Exercitationem facilis perferendis eius cumque.
-          </AboutParagraphSec>
-        </div>
+          <div>
+            <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
+            <AboutParagraphSec>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+              eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
+              dolorum sequi, quibusdam autem, quidem corrupti voluptate
+              deleniti! Exercitationem facilis perferendis eius cumque.
+            </AboutParagraphSec>
+          </div>
 
-        <DownloadButton
-          onClick={() => {
-            downloadPdf(profilePdf);
-          }}
-        >
-          Download Resume
-          <CloudDownloadIcon />
-        </DownloadButton>
-      </LeftAboutWrap>
-      <RightAboutWrap>
-        <ImageWrap>
-          <img src={aboutPhoto} />
-        </ImageWrap>
-      </RightAboutWrap>
-    </AboutWrapper>
-    <PdfData>
+          <DownloadButton
+            onClick={() => {
+              downloadPdf(profilePdf);
+            }}
+          >
+            Download Profile PDF
+            <CloudDownloadIcon />
+          </DownloadButton>
+        </LeftAboutWrap>
+        <RightAboutWrap>
+          <ImageWrap>
+            <img src={aboutPhoto} />
+          </ImageWrap>
+        </RightAboutWrap>
+      </AboutWrapper>
+      <PdfData>
         <ImgaePdfWrap></ImgaePdfWrap>
-    </PdfData>
+      </PdfData>
     </>
   );
 };

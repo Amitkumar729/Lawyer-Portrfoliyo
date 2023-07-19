@@ -7,17 +7,12 @@ import {
   Practicess,
 } from "../../styles/component/practiceArea";
 import { Heading } from "../heading";
+import { Banner } from "../banner";
 
 export const PracticeArea = () => {
   return (
     <PracticeWrap>
-      <Heading velue={"Practice Area"} />
-      <ParaGraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, fugit!
-        Possimus deleniti aperiam consectetur culpa excepturi corrupti vel
-        maxime voluptatibus neque eaque nisi voluptatum, veniam distinctio
-        facere veritatis libero eum?
-      </ParaGraph>
+      <Heading value={"Practice Area"} />
       <Practicess>
         {Practices.map((item, index) => {
           return (

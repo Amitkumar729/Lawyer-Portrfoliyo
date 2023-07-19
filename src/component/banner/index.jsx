@@ -4,7 +4,7 @@ import {
   BannerWrapper,
   Image,
 } from "../../styles/component/banner";
-import dummy from "../../assets/images/banner.png";
+import dummy from "../../assets/images/banner.jpg";
 
 const Banner = () => {
   return (

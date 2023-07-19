@@ -84,11 +84,11 @@ const ContactUs = () => {
                 <InputError>{errors?.phone?.message}</InputError>
               </ElementWrapper>
               <ElementWrapper>
-                <InputTitle>Company</InputTitle>
+                <InputTitle>Reason</InputTitle>
                 <Input
                   type="text"
-                  placeholder="Enter your company name"
-                  {...register("company")}
+                  placeholder="Enter your reason here"
+                  {...register("reason")}
                 />
                 <InputError>{errors?.company?.message}</InputError>
               </ElementWrapper>
