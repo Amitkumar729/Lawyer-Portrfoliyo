@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   Container,
-  CopyRightHeading,
-  CopyRightSection,
+  // CopyRightHeading,
+  // CopyRightSection,
   EmailId,
   EmailLogo,
   EmailSection,
@@ -32,9 +32,12 @@ const Footer = () => {
         <FooterWrap>
           <MoreInfo>
             <MoreInfoHeading>More Information</MoreInfoHeading>
-            <Link to="/terms-and-conditions">Terms & Conditions</Link>
-            <Link to="/services">All Services</Link>
-            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/practice-area">Practice Area</Link>
+            <Link to="/research-publication">Research and Publication</Link>
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/gallary">Gallary</Link>
+            <Link to="/contacts">Contact</Link>
           </MoreInfo>
           <FollowSection>
             <FollowHeading>Social Media</FollowHeading>
@@ -48,30 +51,29 @@ const Footer = () => {
             </SocialMedias>
           </FollowSection>
           <GetInTouch>
-            <GetInTouchHeading>
-              For general enquiries, please contact us using the below
-            </GetInTouchHeading>
+            <GetInTouchHeading>For More Enquiries</GetInTouchHeading>
             <PhoneSection>
               <PhoneLogo>
                 <Phone />
               </PhoneLogo>
               <PhoneNumberSection>
-                <PhoneNumberOne>+91-8882875910</PhoneNumberOne>
+                <PhoneNumberOne>+91-9999226947</PhoneNumberOne>
               </PhoneNumberSection>
             </PhoneSection>
             <EmailSection>
               <EmailLogo>
                 <EmailOutlined />
               </EmailLogo>
-              <EmailId>crepsculares@gmail.com</EmailId>
+              <EmailId>legalmindsinternational@gmail.com</EmailId>
+              <EmailId>avsmanyan@gmail.com</EmailId>
             </EmailSection>
           </GetInTouch>
         </FooterWrap>
-        <CopyRightSection>
+        {/*<CopyRightSection>
           <CopyRightHeading>
             Copyright © 2023 Crepsculares. All rights reserved.
           </CopyRightHeading>
-        </CopyRightSection>
+  </CopyRightSection>*/}
       </Wrapper>
     </Container>
   );

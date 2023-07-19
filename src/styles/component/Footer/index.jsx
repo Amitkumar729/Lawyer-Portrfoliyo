@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   max-width: 1250px;
-  min-height: 280px;
+  min-height: 200px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -106,12 +106,13 @@ export const PhoneNumberOne = styled.p`
 export const EmailSection = styled(PhoneSection)``;
 export const EmailLogo = styled.div``;
 export const EmailId = styled(PhoneNumberOne)``;
-export const CopyRightSection = styled.div`
-  margin-top: 30px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-`;
-export const CopyRightHeading = styled.p`
-  text-align: center;
-`;
+
+// export const CopyRightSection = styled.div`
+//   margin-top: 30px;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+// `;
+// export const CopyRightHeading = styled.p`
+//   text-align: center;
+// `;

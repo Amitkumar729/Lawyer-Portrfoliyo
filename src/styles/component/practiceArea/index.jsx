@@ -25,7 +25,7 @@ export const PracticeElementWrap = styled.div`
   width: 100%;
   max-width: 250px;
   /* min-height: 200px; */
-  padding: 5px;
+  padding: 5px 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ export const PracticeElementTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: orange;
 `;
