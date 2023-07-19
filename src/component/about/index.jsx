@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+// import { Document, Page } from "react-pdf/dist/esm/pdf.worker.entry";
+// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+
 import {
   AboutHeading,
   AboutParagraphSec,
@@ -7,17 +11,22 @@ import {
   RightAboutWrap,
   HeadingWrapper,
   DownloadButton,
-  PdfData,
+  PdfContainer,
   ImgaePdfWrap,
+  ButtonsContainer,
+  Button,
+  ButtonLeftWrap,
+  ButtonRightWrap,
 } from "../../styles/component/about";
 import aboutPhoto from "../../assets/images/about_photo.jpg";
 import { Heading } from "../heading";
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import { jsPDF } from "jspdf";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import profilePdf from "../../assets/documents/profile_2023.pdf";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// ReactPDF.render(<ImageWrap />, `${ profilePdf }`);
 
 export const AboutUs = () => {
-
   const downloadPdf = (url) => {
     const aTag = document.createElement("a");
     aTag.href = url;
@@ -25,43 +34,79 @@ export const AboutUs = () => {
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
-    
-  }
+  };
+
+  // const [numPages, setNumPages] = useState(null);
+  // const [pageNumber, setPageNumber] = useState(1);
+
+  // const onDocumentLoadSuccess = ({ numPages }) => {
+  //   setNumPages(numPages);
+  //   setPageNumber(1);
+  // };
+
+  //   const docs = () => {
+  //     uri: require("../../assets/documents/profile_2023.pdf");
+  // }
 
   return (
     <>
-    <AboutWrapper>
-      <LeftAboutWrap>
-      <HeadingWrapper>
-      
-      <Heading value="WHO WE ARE" />
-      </HeadingWrapper>
+      <AboutWrapper>
+        <LeftAboutWrap>
+          <HeadingWrapper>
+            <Heading value="WHO WE ARE" />
+          </HeadingWrapper>
 
-      <div>
-      
-      <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
-      <AboutParagraphSec>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-        eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
-        dolorum sequi, quibusdam autem, quidem corrupti voluptate deleniti!
-        Exercitationem facilis perferendis eius cumque.
-      </AboutParagraphSec>
-      </div>
-        
-       <DownloadButton   onClick={() => {downloadPdf(profilePdf)} }>
-       Download Profile PDF
-       <CloudDownloadIcon/>
-       </DownloadButton>
-      </LeftAboutWrap>
-      <RightAboutWrap>
-        <ImageWrap>
-          <img src={aboutPhoto} />
-        </ImageWrap>
-      </RightAboutWrap>
-    </AboutWrapper>
-    <PdfData>
-        <ImgaePdfWrap></ImgaePdfWrap>
-    </PdfData>
+          <div>
+            <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
+            <AboutParagraphSec>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+              eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
+              dolorum sequi, quibusdam autem, quidem corrupti voluptate
+              deleniti! Exercitationem facilis perferendis eius cumque.
+            </AboutParagraphSec>
+          </div>
+
+          <DownloadButton
+            onClick={() => {
+              downloadPdf(profilePdf);
+            }}
+          >
+            Download PDF
+            <CloudDownloadIcon />
+          </DownloadButton>
+        </LeftAboutWrap>
+        <RightAboutWrap>
+          <ImageWrap>
+            <img src={aboutPhoto} />
+          </ImageWrap>
+        </RightAboutWrap>
+      </AboutWrapper>
+      <PdfContainer>
+        <ImgaePdfWrap>
+       {/*  <DocViewer    pluginRenderers={DocViewerRenderers} />*/}
+        </ImgaePdfWrap>
+        <ButtonsContainer>
+          <ButtonLeftWrap>
+            <DownloadButton
+              onClick={() => {
+                downloadPdf(profilePdf);
+              }}
+            >
+              Download PDF
+              <CloudDownloadIcon />
+            </DownloadButton>
+          </ButtonLeftWrap>
+
+          <ButtonRightWrap>
+            <Button>
+              <ArrowBackIcon /> Previous
+            </Button>
+            <Button>
+              Next <ArrowForwardIcon />
+            </Button>
+          </ButtonRightWrap>
+        </ButtonsContainer>
+      </PdfContainer>
     </>
   );
 };

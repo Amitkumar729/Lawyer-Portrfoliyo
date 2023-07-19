@@ -34,7 +34,7 @@ export const DownloadButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 170px;
   gap: 10px;
   cursor: pointer;
   background-color: #180d33;
@@ -60,15 +60,58 @@ export const ImageWrap = styled.div`
 `;
 
 
-export const PdfData = styled.div`
+export const PdfContainer = styled.div`
   border: 1px solid red;
-  height: 700px;
+  height: 750px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const ImgaePdfWrap = styled.div`
 border: 3px solid gray;
-height: 100%;
-width: 650px;
+height: 98%;
+width: 630px;
 `
+
+export const ButtonsContainer = styled.div`
+border: 1px solid green;
+height: 50px;
+width: 630px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 240px;
+`
+
+export const ButtonLeftWrap = styled.div`
+
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const ButtonRightWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+`;
+
+
+export const Button = styled.div`
+  height: 30px;
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #180d33;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  &:hover {
+color: orange;
+  }
+` 
