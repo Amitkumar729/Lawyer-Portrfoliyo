@@ -120,13 +120,13 @@ export const TextAreaInput = styled.textarea`
 `;
 export const ButtonWrapper = styled.div`
   width: 100%;
-  max-width: 150px;
-  min-height: 45px;
-  background-color: #d61355;
+  max-width: 110px;
+  min-height: 35px;
+  background-color: #180d33;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: 1px 1px 15px 1px #e0e0e0;
   color: white;
   padding: 7px 0;
@@ -147,5 +147,9 @@ export const Button = styled.button`
   &:focus {
     outline: 2px solid white;
     border-radius: 2px;
+  }
+
+  &:hover{
+    color: orange;
   }
 `;

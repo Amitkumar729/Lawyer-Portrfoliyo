@@ -23,6 +23,7 @@ import {
   Redirect,
   SocialMedias,
   Wrapper,
+  Address
 } from "../../styles/component/Footer";
 
 const Footer = () => {
@@ -40,15 +41,18 @@ const Footer = () => {
             <Link to="/contacts">Contact</Link>
           </MoreInfo>
           <FollowSection>
-            <FollowHeading>Social Media</FollowHeading>
-            <SocialMedias>
+            <FollowHeading>Registered Office</FollowHeading>
+            {/*<SocialMedias>
               <Redirect href="https://www.facebook.com/">
                 <Facebook sx={iconStyles} />
               </Redirect>
               <Redirect href="https://instagram.com/">
                 <Instagram sx={iconStyles} />
               </Redirect>
-            </SocialMedias>
+  </SocialMedias>*/}
+  <Address>
+    131D, Pocket-F, Mayur Vihar Phase-2, Delhi-110096
+  </Address>
           </FollowSection>
           <GetInTouch>
             <GetInTouchHeading>
@@ -59,15 +63,21 @@ const Footer = () => {
                 <Phone />
               </PhoneLogo>
               <PhoneNumberSection>
+                <PhoneNumberOne>011-4185 1351</PhoneNumberOne>
                 <PhoneNumberOne>+91-9999226947</PhoneNumberOne>
+                <PhoneNumberOne>+91-9811306559</PhoneNumberOne>
               </PhoneNumberSection>
             </PhoneSection>
             <EmailSection>
               <EmailLogo>
                 <EmailOutlined />
               </EmailLogo>
-              <EmailId>legalmindsinternational@gmail.com</EmailId>
-              <EmailId>avsmanyan@gmail.com</EmailId>
+              <EmailId>
+              <div>legalmindsinternational@gmail.com</div>
+              <div>avsmanyam@gmail.com</div>
+              <div>nirajkumar1976@gmail.com</div>
+              </EmailId>
+              
             </EmailSection>
           </GetInTouch>
         </FooterWrap>

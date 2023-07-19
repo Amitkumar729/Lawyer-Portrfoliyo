@@ -34,7 +34,7 @@ export const DownloadButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 200px;
   gap: 10px;
   cursor: pointer;
   background-color: #180d33;

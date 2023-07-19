@@ -6,6 +6,7 @@ export const Container = styled.div`
   place-items: center;
   background-color: #182135;
   color: white;
+  border-radius: 20px;
 
   @media (max-width: 768px) {
     text-align: center;
@@ -57,9 +58,13 @@ export const FollowSection = styled.div`
   gap: 10px;
 `;
 export const FollowHeading = styled.h1`
+display: flex;
+justify-content: center;
   font-size: 20px;
   font-weight: 600;
 `;
+export const Address = styled.div``;
+
 export const SocialMedias = styled.div`
   display: flex;
   justify-content: center;
@@ -81,7 +86,7 @@ export const GetInTouch = styled.div`
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 
   @media (max-width: 768px) {
     max-width: 350px;
@@ -96,7 +101,7 @@ export const GetInTouchHeading = styled.h1`
 export const PhoneSection = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 `;
 export const PhoneLogo = styled.div``;
 export const PhoneNumberSection = styled.div``;

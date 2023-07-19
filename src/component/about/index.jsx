@@ -49,7 +49,7 @@ export const AboutUs = () => {
       </div>
         
        <DownloadButton   onClick={() => {downloadPdf(profilePdf)} }>
-       Download Resume
+       Download Profile PDF
        <CloudDownloadIcon/>
        </DownloadButton>
       </LeftAboutWrap>
