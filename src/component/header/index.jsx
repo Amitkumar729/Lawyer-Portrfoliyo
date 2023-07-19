@@ -17,16 +17,15 @@ import {
 import { MyLink } from "../../styles/common";
 import Sidebar from "./sidebar";
 
-
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <HeaderContainer>
-      <HeaderWraper>
+      <HeaderWraper isSidebarOpen={isSidebarOpen}>
         <HeaderLeftWrap>
           <IconButton>
-            <BalanceIcon sx={{ fontSize: "35px", color: "black" }} />
+            <BalanceIcon sx={{ fontSize: "35px", color: "#180D33" }} />
           </IconButton>
           <h1>Justice</h1>
         </HeaderLeftWrap>
@@ -43,7 +42,11 @@ const Header = () => {
           <MenuIcon_styled onClick={() => setSidebarOpen(!isSidebarOpen)} />
         </HeaderRightWrap>
       </HeaderWraper>
-      <Sidebar isSidebarOpen={isSidebarOpen} headerElement={element} /> 
+      <Sidebar
+        isSidebarOpen={isSidebarOpen}
+        headerElement={element}
+        setSidebarOpen={setSidebarOpen}
+      />
     </HeaderContainer>
   );
 };

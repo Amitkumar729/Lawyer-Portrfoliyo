@@ -6,7 +6,9 @@ export const HeadingWrap = styled.div`
   max-width: max-content;
   padding: 10px 20px;
   border-radius: 20px;
-  /* border: 1px solid orange; */
-  background-color: orange;
-  color: white;
+  border: 2px solid #180d33;
+  color: #180d33;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: white;
 `;

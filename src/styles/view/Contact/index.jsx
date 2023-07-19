@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 650px;
-  background-color: white;
+  background-color: #faf9f6;
   gap: 10px;
   padding: 0px 10px 50px 10px;
 `;
@@ -88,7 +88,7 @@ export const Input = styled.input`
   border: 2px solid #c2c2c2;
   padding-left: 10px;
   &:focus {
-    outline: 2px solid #d61355;
+    outline: 2px solid #180d33;
     border-radius: 1px;
     border: none;
   }
@@ -114,7 +114,7 @@ export const TextAreaInput = styled.textarea`
   border: 2px solid #c2c2c2;
 
   &:focus {
-    outline: 2px solid #d61355;
+    outline: 2px solid #180d33;
     border: none;
   }
 `;
@@ -126,7 +126,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 1px 1px 15px 1px #e0e0e0;
   color: white;
   padding: 7px 0;
@@ -144,12 +144,7 @@ export const Button = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  &:focus {
-    outline: 2px solid white;
-    border-radius: 2px;
-  }
-
-  &:hover{
+  &:hover {
     color: orange;
   }
 `;
