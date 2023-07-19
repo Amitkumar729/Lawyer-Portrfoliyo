@@ -6,8 +6,11 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HeaderWraper = styled.div`
+  width: 100%;
+  position: ${(props) => (props.isSidebarOpen ? "fixed" : "static")};
+  top: 5px;
   display: flex;
-  min-height: 50px;
+  min-height: 70px;
   justify-content: space-between;
   border-radius: 5px;
   box-shadow: -10px 0px 20px 6px lightgray;
@@ -17,13 +20,17 @@ export const HeaderWraper = styled.div`
 `;
 
 export const HeaderLeftWrap = styled.div`
-  width: 200px;
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: orange;
   color: white;
   border-radius: 5px;
+  padding: 0px 15px;
 `;
 
 export const HeaderElemntContainer = styled.div`

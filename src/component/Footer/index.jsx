@@ -1,10 +1,8 @@
-import { EmailOutlined, Facebook, Instagram, Phone } from "@mui/icons-material";
+import { EmailOutlined, Phone } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
 import {
   Container,
-  // CopyRightHeading,
-  // CopyRightSection,
   EmailId,
   EmailLogo,
   EmailSection,
@@ -13,17 +11,14 @@ import {
   FooterWrap,
   GetInTouch,
   GetInTouchHeading,
-  iconStyles,
   MoreInfo,
   MoreInfoHeading,
   PhoneLogo,
   PhoneNumberOne,
   PhoneNumberSection,
   PhoneSection,
-  Redirect,
-  SocialMedias,
   Wrapper,
-  Address
+  Address,
 } from "../../styles/component/Footer";
 
 const Footer = () => {
@@ -42,22 +37,11 @@ const Footer = () => {
           </MoreInfo>
           <FollowSection>
             <FollowHeading>Registered Office</FollowHeading>
-            {/*<SocialMedias>
-              <Redirect href="https://www.facebook.com/">
-                <Facebook sx={iconStyles} />
-              </Redirect>
-              <Redirect href="https://instagram.com/">
-                <Instagram sx={iconStyles} />
-              </Redirect>
-  </SocialMedias>*/}
-  <Address>
-    131D, Pocket-F, Mayur Vihar Phase-2, Delhi-110096
-  </Address>
+
+            <Address>131D, Pocket-F, Mayur Vihar Phase-2, Delhi-110096</Address>
           </FollowSection>
           <GetInTouch>
-            <GetInTouchHeading>
-              For More Enquiries
-            </GetInTouchHeading>
+            <GetInTouchHeading>For More Enquiries</GetInTouchHeading>
             <PhoneSection>
               <PhoneLogo>
                 <Phone />
@@ -73,19 +57,13 @@ const Footer = () => {
                 <EmailOutlined />
               </EmailLogo>
               <EmailId>
-              <div>legalmindsinternational@gmail.com</div>
-              <div>avsmanyam@gmail.com</div>
-              <div>nirajkumar1976@gmail.com</div>
+                <div>legalmindsinternational@gmail.com</div>
+                <div>avsmanyam@gmail.com</div>
+                <div>nirajkumar1976@gmail.com</div>
               </EmailId>
-              
             </EmailSection>
           </GetInTouch>
         </FooterWrap>
-        {/*<CopyRightSection>
-          <CopyRightHeading>
-            Copyright © 2023 Crepsculares. All rights reserved.
-          </CopyRightHeading>
-  </CopyRightSection>*/}
       </Wrapper>
     </Container>
   );

@@ -9,17 +9,15 @@ export const PracticeWrap = styled.div`
 `;
 
 export const Practicess = styled.div`
-  width: 800px;
-  height: 750px;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center; 
-  /* padding: 50px 0px; */
+  text-align: center;
+  padding: 50px 0px;
   gap: 50px;
-  /* background-color: #180d33; */
-  /* border: 1px solid green; */
 `;
 
 export const PracticeElementWrap = styled.div`
@@ -27,7 +25,7 @@ export const PracticeElementWrap = styled.div`
   width: 150px;
   height: 70px;
   padding: 5px;
-  background-color: #FAF9F6;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;

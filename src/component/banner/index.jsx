@@ -6,7 +6,7 @@ import {
 } from "../../styles/component/banner";
 import dummy from "../../assets/images/banner.jpg";
 
-const Banner = () => {
+export const Banner = () => {
   return (
     <BannerContainer>
       <BannerWrapper>
@@ -15,5 +15,3 @@ const Banner = () => {
     </BannerContainer>
   );
 };
-
-export default Banner;

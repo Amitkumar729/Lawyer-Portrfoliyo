@@ -1,13 +1,11 @@
 import { Practices } from "../../constant/practiceArea";
 import {
-  ParaGraph,
   PracticeElementTitle,
   PracticeElementWrap,
   PracticeWrap,
   Practicess,
 } from "../../styles/component/practiceArea";
 import { Heading } from "../heading";
-import {Banner} from "../banner"
 
 export const PracticeArea = () => {
   return (
@@ -16,7 +14,7 @@ export const PracticeArea = () => {
       <Practicess>
         {Practices.map((item, index) => {
           return (
-            <PracticeElementWrap>
+            <PracticeElementWrap key={index}>
               <PracticeElementTitle>{item.title}</PracticeElementTitle>
             </PracticeElementWrap>
           );

@@ -2,9 +2,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
+  position: fixed;
+  top: 70px;
   width: 100%;
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 270px;
+  min-width: 270px;
   min-height: 800px;
   box-shadow: -6px 0px 15px 3px #787878;
   padding: 0px 10px;
@@ -13,8 +15,6 @@ export const SidebarContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 5px;
   border-radius: 3px;
   transition: margin 1.5s;
   margin-left: ${({ isSidebarOpen }) => (!isSidebarOpen ? "-350px" : "")};
@@ -24,7 +24,7 @@ export const SidebarContainer = styled.div`
     color: white;
   }
   z-index: 10;
-  @media  (min-width: 1050px){
+  @media (min-width: 1050px) {
     display: none;
   }
 `;

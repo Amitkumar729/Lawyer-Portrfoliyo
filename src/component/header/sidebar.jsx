@@ -6,14 +6,14 @@ import {
 import { MyLink } from "../../styles/common";
 import { HeaderElemntWrap } from "../../styles/component/header";
 
-const Sidebar = ({ isSidebarOpen, headerElement }) => {
+const Sidebar = ({ setSidebarOpen, isSidebarOpen, headerElement }) => {
   return (
     <SidebarContainer isSidebarOpen={isSidebarOpen}>
       <SidebarWrap>
         {headerElement.map((item, index) => {
           return (
             <MyLink to={item.to} key={index}>
-              <HeaderElemntWrap>
+              <HeaderElemntWrap onClick={() => setSidebarOpen(false)}>
                 <item.icon />
                 {item.name}
               </HeaderElemntWrap>
