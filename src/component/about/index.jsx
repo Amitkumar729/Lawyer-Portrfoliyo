@@ -90,9 +90,9 @@ export const AboutUs = ({ isHome }) => {
       {!isHome ? (
         <PdfContainer>
           <ImgaePdfWrap>
-            {/*  <DocViewer    pluginRenderers={DocViewerRenderers} />*/}
+            <embed src={profilePdf} />
           </ImgaePdfWrap>
-          <ButtonsContainer>
+          {/* <ButtonsContainer>
             <ButtonLeftWrap>
               <DownloadButton
                 onClick={() => {
@@ -112,7 +112,7 @@ export const AboutUs = ({ isHome }) => {
                 Next <ArrowForwardIcon />
               </Button>
             </ButtonRightWrap>
-          </ButtonsContainer>
+          </ButtonsContainer> */}
         </PdfContainer>
       ) : null}
     </>
