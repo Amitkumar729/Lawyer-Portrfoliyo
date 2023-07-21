@@ -78,9 +78,13 @@ export const AboutUs = ({ isHome }) => {
       {!isHome ? (
         <PdfContainer>
           <ImgaePdfWrap>
+<<<<<<< HEAD
             
+=======
+            <embed src={profilePdf} />
+>>>>>>> 27fd4c9b471ef13687b47c113c7c6d560ab2c18d
           </ImgaePdfWrap>
-          <ButtonsContainer>
+          {/* <ButtonsContainer>
             <ButtonLeftWrap>
               <DownloadButton
                 onClick={() => {
@@ -100,7 +104,7 @@ export const AboutUs = ({ isHome }) => {
                 Next <ArrowForwardIcon />
               </Button>
             </ButtonRightWrap>
-          </ButtonsContainer>
+          </ButtonsContainer> */}
         </PdfContainer>
       ) : null}
     </>

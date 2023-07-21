@@ -78,7 +78,7 @@ export const ImageWrap = styled.div`
 `;
 
 export const PdfContainer = styled.div`
-  border: 1px solid red;
+  width: 100%;
   height: 750px;
   display: flex;
   justify-content: center;
@@ -87,9 +87,14 @@ export const PdfContainer = styled.div`
 `;
 
 export const ImgaePdfWrap = styled.div`
-  border: 3px solid gray;
-  height: 98%;
-  width: 630px;
+  height: 100%;
+  width: 100%;
+  max-width: 80%;
+  embed {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
