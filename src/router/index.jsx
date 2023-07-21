@@ -3,7 +3,7 @@ import Header from "../component/header";
 import Home from "../page/home";
 import { About } from "../page/about";
 import { PracticeArea } from "../page/practiceArea";
-import Footer from "../component/Footer";
+import Footer from "../component/footer";
 import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
 

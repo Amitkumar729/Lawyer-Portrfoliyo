@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import ResumePdf from "../../assets/documents/Resume.pdf";
 import profilePdf from "../../assets/documents/profile_2023.pdf";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-// import { Document, Page } from "react-pdf/dist/esm/pdf.worker.entry";
-// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import aboutPhoto from "../../assets/images/about_photo.jpg";
 import profilePic from "../../assets/images/profilePic.jpg";
 import { Heading } from "../heading";
@@ -25,29 +24,18 @@ import {
   ButtonLeftWrap,
   ButtonRightWrap,
 } from "../../styles/component/about";
-// ReactPDF.render(<ImageWrap />, `${ profilePdf }`);
 
 export const AboutUs = ({ isHome }) => {
   const downloadPdf = (url) => {
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", "profile_2023");
+    aTag.setAttribute("download", "Resume");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
   };
 
-  // const [numPages, setNumPages] = useState(null);
-  // const [pageNumber, setPageNumber] = useState(1);
-
-  // const onDocumentLoadSuccess = ({ numPages }) => {
-  //   setNumPages(numPages);
-  //   setPageNumber(1);
-  // };
-
-  //   const docs = () => {
-  //     uri: require("../../assets/documents/profile_2023.pdf");
-  // }
+   
 
   return (
     <>
@@ -73,7 +61,7 @@ export const AboutUs = ({ isHome }) => {
 
           <DownloadButton
             onClick={() => {
-              downloadPdf(profilePdf);
+              downloadPdf(ResumePdf);
             }}
           >
             Download Resume
@@ -90,7 +78,7 @@ export const AboutUs = ({ isHome }) => {
       {!isHome ? (
         <PdfContainer>
           <ImgaePdfWrap>
-            {/*  <DocViewer    pluginRenderers={DocViewerRenderers} />*/}
+            
           </ImgaePdfWrap>
           <ButtonsContainer>
             <ButtonLeftWrap>
