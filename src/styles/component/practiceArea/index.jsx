@@ -39,7 +39,5 @@ export const PracticeElementTitle = styled.div`
   align-items: center;
   text-align: center;
   font-size: 17px;
-  /* font-weight: 00; */
-  /* color: #180d33; */
   color: black;
 `;

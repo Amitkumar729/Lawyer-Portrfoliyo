@@ -34,6 +34,7 @@ export const AboutHeading = styled.div`
 export const AboutParagraphSec = styled.p`
   font-size: 17px;
   text-align: justify;
+ font-family: Georgia, serif;
 `;
 
 export const DownloadButton = styled.div`
@@ -97,41 +98,3 @@ export const ImgaePdfWrap = styled.div`
   }
 `;
 
-export const ButtonsContainer = styled.div`
-  border: 1px solid green;
-  height: 50px;
-  width: 630px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 240px;
-`;
-
-export const ButtonLeftWrap = styled.div`
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const ButtonRightWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 50px;
-`;
-
-export const Button = styled.div`
-  height: 30px;
-  width: 95px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #180d33;
-  color: white;
-  cursor: pointer;
-  border-radius: 8px;
-  &:hover {
-    color: orange;
-  }
-`;

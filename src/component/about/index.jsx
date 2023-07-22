@@ -7,6 +7,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import aboutPhoto from "../../assets/images/about_photo.jpg";
 import profilePic from "../../assets/images/profilePic.jpg";
 import { Heading } from "../heading";
+import { PageDetails } from "../../views/pageDetails";
 
 import {
   AboutHeading,
@@ -19,10 +20,6 @@ import {
   DownloadButton,
   PdfContainer,
   ImgaePdfWrap,
-  ButtonsContainer,
-  Button,
-  ButtonLeftWrap,
-  ButtonRightWrap,
 } from "../../styles/component/about";
 
 export const AboutUs = ({ isHome }) => {
@@ -35,8 +32,6 @@ export const AboutUs = ({ isHome }) => {
     aTag.remove();
   };
 
-   
-
   return (
     <>
       <AboutWrapper>
@@ -48,14 +43,7 @@ export const AboutUs = ({ isHome }) => {
           <div>
             <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
             <AboutParagraphSec>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-              eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
-              dolorum sequi, quibusdam autem, quidem corrupti voluptate
-              deleniti! Exercitationem facilis perferendis eius cumque. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Itaque eum,
-              unde numquam voluptatem quaerat adipisci ipsum repudiandae dolorum
-              sequi, quibusdam autem, quidem corrupti voluptate deleniti!
-              Exercitationem facilis perferendis eius cumque.
+            I have an experience of more than 19 years inthe legal field parcularly in the sectors of Oil & Gas and Banking. I have handled mulfarious ligaons including arbitraons. I advised GAIL(India) Ltd; SBH and SBBJ as their in-house legal counsel. He is well versed with all the legal issues and ligaons with regard to the OIL and Natural Gas Sector. I have special experse in draing and seling of various agreements relang to OiL & Gas sector such as Gas Sale and Purchase Agreements, Gas Transmission Agreements, agreements with Consignee stockists, Share Holders Agreements, Bank Guarantees, ConfidenalityAgreements, NonDisclosure Agreements, Tolling Term Sheets, Definive Agreements, Side leer of various exisng contracts, Secondment agreements Commodity Swapping agreements etc. Further, I have a track record in conducng arbitraons pertaining to OIL & Gas Sector.
             </AboutParagraphSec>
           </div>
 
@@ -75,36 +63,12 @@ export const AboutUs = ({ isHome }) => {
           </ImageWrap>
         </RightAboutWrap>
       </AboutWrapper>
+
       {!isHome ? (
         <PdfContainer>
           <ImgaePdfWrap>
-<<<<<<< HEAD
-            
-=======
             <embed src={profilePdf} />
->>>>>>> 27fd4c9b471ef13687b47c113c7c6d560ab2c18d
           </ImgaePdfWrap>
-          {/* <ButtonsContainer>
-            <ButtonLeftWrap>
-              <DownloadButton
-                onClick={() => {
-                  downloadPdf(profilePdf);
-                }}
-              >
-                Download PDF
-                <CloudDownloadIcon />
-              </DownloadButton>
-            </ButtonLeftWrap>
-
-            <ButtonRightWrap>
-              <Button>
-                <ArrowBackIcon /> Previous
-              </Button>
-              <Button>
-                Next <ArrowForwardIcon />
-              </Button>
-            </ButtonRightWrap>
-          </ButtonsContainer> */}
         </PdfContainer>
       ) : null}
     </>
