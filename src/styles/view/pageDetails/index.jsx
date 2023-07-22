@@ -60,3 +60,11 @@ export const ParragraphText = styled.div`
   padding-top: 20px;
 `;
 
+export const DownloadArea = styled.div`
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+
+`;
+
