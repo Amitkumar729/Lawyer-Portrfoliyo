@@ -6,6 +6,7 @@ import { PracticeArea } from "../page/practiceArea";
 import Footer from "../component/Footer";
 import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
+import Blog from "../page/blog";
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
         <Route path="/practice-area" element={<PracticeArea />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallary" element={<Gallary />} />
+        <Route path="/blogs" element={<Blog />} />
       </Routes>
       <Footer />
     </BrowserRouter>

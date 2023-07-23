@@ -26,3 +26,18 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 `;
+
+export const Heading = styled.h2`
+  font: normal normal 500 50px "Lexend", sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+  }
+`;
+export const SubHeading = styled.p`
+  font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+`;

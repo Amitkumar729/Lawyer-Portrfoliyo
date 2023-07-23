@@ -92,27 +92,6 @@ export const AboutUs = ({ isHome }) => {
           <ImgaePdfWrap>
             <embed src={profilePdf} />
           </ImgaePdfWrap>
-          {/* <ButtonsContainer>
-            <ButtonLeftWrap>
-              <DownloadButton
-                onClick={() => {
-                  downloadPdf(profilePdf);
-                }}
-              >
-                Download PDF
-                <CloudDownloadIcon />
-              </DownloadButton>
-            </ButtonLeftWrap>
-
-            <ButtonRightWrap>
-              <Button>
-                <ArrowBackIcon /> Previous
-              </Button>
-              <Button>
-                Next <ArrowForwardIcon />
-              </Button>
-            </ButtonRightWrap>
-          </ButtonsContainer> */}
         </PdfContainer>
       ) : null}
     </>
