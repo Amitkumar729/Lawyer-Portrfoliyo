@@ -58,19 +58,17 @@ export const PageDetails = () => {
               );
             })}
           </ParragraphWrapper>
-          <Heading value="Download Brouchure" />
-          <DownloadArea>
-          <DownloadButton
-            onClick={() => {
-              downloadPdf(brochurePdf);
-            }}
-          >
-            Download Brochure
-            <CloudDownloadIcon/>
-          </DownloadButton>
-          </DownloadArea>
 
-         
+          <DownloadArea>
+            <DownloadButton
+              onClick={() => {
+                downloadPdf(brochurePdf);
+              }}
+            >
+              Download Brochure
+              <CloudDownloadIcon />
+            </DownloadButton>
+          </DownloadArea>
         </ParragraphContainer>
       </TopContainer>
     </>

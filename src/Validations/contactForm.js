@@ -7,7 +7,7 @@ export const FormValidation = yup.object().shape({
     phone:yup.number().required('Please enter phone number')
     .typeError('Please enter phone number') 
     .test('len', 'Number must be of 10 digit', val => val.toString().length === 10),
-    company:yup.string().required("Company name is required").min(4),
-    message:yup.string().required("Please enter some message").min(10)
+    reason:yup.string().required("reason is required").min(4),
+    message:yup.string().required("Please Enter Some message").min(10)
 
 }).required()

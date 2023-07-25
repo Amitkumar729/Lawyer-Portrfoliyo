@@ -20,6 +20,7 @@ import {
   Wrapper,
   Address,
 } from "../../styles/component/Footer";
+import { element } from "../../constant/header";
 
 const Footer = () => {
   return (
@@ -28,13 +29,14 @@ const Footer = () => {
         <FooterWrap>
           <MoreInfo>
             <MoreInfoHeading>More Information</MoreInfoHeading>
-            <Link to="/profile">Profile</Link>
-            <Link to="/about">About</Link>
-            <Link to="/practice-area">Practice Area</Link>
-            <Link to="/research-publication">Research and Publication</Link>
-            <Link to="/blogs">Blogs</Link>
-            <Link to="/gallary">Gallary</Link>
-            <Link to="/contact">Contact</Link>
+
+              { 
+
+                element.map((item, index) => {
+                  return <Link to = {item.to} > {item.name} </Link>
+                })
+
+               }
           </MoreInfo>
           <FollowSection>
             <FollowHeading>Registered Office</FollowHeading>

@@ -22,6 +22,8 @@ import {
   Img,
   Wrapper,
 } from "../../styles/view/Contact";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 const ContactUs = () => {
   const [formSubmited, setFormSubmited] = useState(false);
   const [loader, setLoader] = useState(false);
@@ -35,19 +37,36 @@ const ContactUs = () => {
   });
   const onSubmit = async (data) => {
     setLoader(!loader);
-    const res = await axios.post("http://localhost:5000/mail/contact-mail", {
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-      message: data.message,
-      company: data.company,
-    });
+    // const res = await axios.post("http://localhost:5000/mail/contact-mail", {
+    //   name: data.name,
+    //   email: data.email,
+    //   phone: data.phone,
+    //   message: data.message,
+    //   company: data.company,
+    // });
+
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_PUBLIC_KEY')
+    // .then((result) => {
+    //     // show the user a success message
+    // }, (error) => {
+    //     // show the user an error
+    // });
+
+
+    const emailData = {
+      to: data.email,
+      subject: data.reason,
+      body: data.message,
+    };
+    
+    emailjs.send('service_f5ic263', 'template_86wupjd', emailData, 'Bul6mlBfyOKNaQceO');
+
     setLoader(!loader);
     setFormSubmited(true);
     reset();
   };
 
-  return (
+  return ( 
     <Container>
       <Wrapper>
         <FormContainer onSubmit={handleSubmit(onSubmit)}>
@@ -90,7 +109,7 @@ const ContactUs = () => {
                   placeholder="Enter your reason here"
                   {...register("reason")}
                 />
-                <InputError>{errors?.company?.message}</InputError>
+                <InputError>{errors?.reason?.message}</InputError>
               </ElementWrapper>
             </ElementContainer>
             <ElementContainer>
