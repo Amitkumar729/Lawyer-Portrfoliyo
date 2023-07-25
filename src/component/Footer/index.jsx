@@ -29,11 +29,12 @@ const Footer = () => {
           <MoreInfo>
             <MoreInfoHeading>More Information</MoreInfoHeading>
             <Link to="/profile">Profile</Link>
+            <Link to="/about">About</Link>
             <Link to="/practice-area">Practice Area</Link>
             <Link to="/research-publication">Research and Publication</Link>
             <Link to="/blogs">Blogs</Link>
             <Link to="/gallary">Gallary</Link>
-            <Link to="/contacts">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </MoreInfo>
           <FollowSection>
             <FollowHeading>Registered Office</FollowHeading>
