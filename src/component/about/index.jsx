@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import ResumePdf from "../../assets/documents/Resume.pdf";
 import profilePdf from "../../assets/documents/profile_2023.pdf";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-// import { Document, Page } from "react-pdf/dist/esm/pdf.worker.entry";
-// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 import aboutPhoto from "../../assets/images/about_photo.jpg";
 import profilePic from "../../assets/images/profilePic.jpg";
 import { Heading } from "../heading";
+import { PageDetails } from "../../views/pageDetails";
 
 import {
   AboutHeading,
@@ -20,34 +20,17 @@ import {
   DownloadButton,
   PdfContainer,
   ImgaePdfWrap,
-  ButtonsContainer,
-  Button,
-  ButtonLeftWrap,
-  ButtonRightWrap,
 } from "../../styles/component/about";
-// ReactPDF.render(<ImageWrap />, `${ profilePdf }`);
 
 export const AboutUs = ({ isHome }) => {
   const downloadPdf = (url) => {
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", "profile_2023");
+    aTag.setAttribute("download", "Resume");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
   };
-
-  // const [numPages, setNumPages] = useState(null);
-  // const [pageNumber, setPageNumber] = useState(1);
-
-  // const onDocumentLoadSuccess = ({ numPages }) => {
-  //   setNumPages(numPages);
-  //   setPageNumber(1);
-  // };
-
-  //   const docs = () => {
-  //     uri: require("../../assets/documents/profile_2023.pdf");
-  // }
 
   return (
     <>
@@ -60,20 +43,13 @@ export const AboutUs = ({ isHome }) => {
           <div>
             <AboutHeading>A.V.S.SUBRAMANYAM</AboutHeading>
             <AboutParagraphSec>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-              eum, unde numquam voluptatem quaerat adipisci ipsum repudiandae
-              dolorum sequi, quibusdam autem, quidem corrupti voluptate
-              deleniti! Exercitationem facilis perferendis eius cumque. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Itaque eum,
-              unde numquam voluptatem quaerat adipisci ipsum repudiandae dolorum
-              sequi, quibusdam autem, quidem corrupti voluptate deleniti!
-              Exercitationem facilis perferendis eius cumque.
+            I have an experience of more than 19 years inthe legal field parcularly in the sectors of Oil & Gas and Banking. I have handled mulfarious ligaons including arbitraons. I advised GAIL(India) Ltd; SBH and SBBJ as their in-house legal counsel. He is well versed with all the legal issues and ligaons with regard to the OIL and Natural Gas Sector. I have special experse in draing and seling of various agreements relang to OiL & Gas sector such as Gas Sale and Purchase Agreements, Gas Transmission Agreements, agreements with Consignee stockists, Share Holders Agreements, Bank Guarantees, ConfidenalityAgreements, NonDisclosure Agreements, Tolling Term Sheets, Definive Agreements, Side leer of various exisng contracts, Secondment agreements Commodity Swapping agreements etc. Further, I have a track record in conducng arbitraons pertaining to OIL & Gas Sector.
             </AboutParagraphSec>
           </div>
 
           <DownloadButton
             onClick={() => {
-              downloadPdf(profilePdf);
+              downloadPdf(ResumePdf);
             }}
           >
             Download Resume
@@ -87,6 +63,7 @@ export const AboutUs = ({ isHome }) => {
           </ImageWrap>
         </RightAboutWrap>
       </AboutWrapper>
+
       {!isHome ? (
         <PdfContainer>
           <ImgaePdfWrap>
