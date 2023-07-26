@@ -12,12 +12,12 @@ export const element = [
   { name: "Profile", to: "/profile", icon: PersonIcon },
   { name: "About", to: "/about", icon: InfoIcon },
   { name: "Practice Area", to: "/practice-area", icon: LocalLibraryIcon },
-  // {
-  //   name: "Reasearch & Publication",
-  //   to: "/research&publication",
-  //   icon: MenuBookIcon,
-  // },
-  // { name: "Blogs", to: "/blogs", icon: KeyboardHideIcon },
+  {
+    name: "Reasearch & Publication",
+    to: "/research&publication",
+    icon: MenuBookIcon,
+  },
+  { name: "Blogs", to: "/blogs", icon: KeyboardHideIcon },
   { name: "Gallary", to: "/gallary", icon: PhotoLibraryIcon },
   { name: "Contact", to: "/contact", icon: CallIcon },
 ];

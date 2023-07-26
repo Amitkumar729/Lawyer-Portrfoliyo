@@ -3,6 +3,9 @@ export const Practices = [
     title: "Arbitration",
   },
   {
+    title: "Insolvency",
+  },
+  {
     title: "Litigation",
   },
   {

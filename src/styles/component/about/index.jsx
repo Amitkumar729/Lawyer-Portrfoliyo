@@ -6,7 +6,8 @@ export const AboutWrapper = styled.div`
   align-self: center;
   min-height: 300px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  flex-direction: ${({direction}) => direction === "left"? "row": "row-reverse"  };
   @media (max-width: 750px) {
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,6 @@ export const LeftAboutWrap = styled.div`
   min-height: 350px;
   flex-direction: column;
   display: flex;
-  justify-content: space-between;
   gap: 12px;
 `;
 
@@ -57,6 +57,7 @@ export const DownloadButton = styled.div`
 
 export const RightAboutWrap = styled.div`
   width: 100%;
+  max-width: 350px;
   min-height: 350px;
   display: flex;
   align-items: center;
