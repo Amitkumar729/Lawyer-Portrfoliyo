@@ -5,7 +5,7 @@ import { Container, DisclaimerContainer } from "../../styles/view/home";
 import { users } from "../../constant/user";
 import Modal from "../../component/modal"
 import { Heading } from "../../component/heading";
-import { ParragraphContainer, ParragraphText } from "../../styles/view/pageDetails";
+import { ParragraphText } from "../../styles/view/pageDetails";
 
 const Home = () => {
   return (
@@ -31,11 +31,11 @@ const Home = () => {
         
       <Heading value = "Disclaimer"/>
   
-    <ParragraphContainer>
+    <div>
       <ParragraphText>
       The Bar Council of India does not permit adversement or solicitaon by advocates in any form or manner. By accessing this brochure you acknowledge and confirm that you are seeking information relating to Legal Minds International of your own accord and that there has been no form of solicitation, advertisement or inducement by Legal Minds International or its members.The content of this brochure is for informational purposes only and should not be interpreted as soliciting or advertisement. No material/information provided in this brochure should be construed as legal advice. Legal Minds International shall not be liable for consequences of any action taken by relying on the material/information provided in this brochure.
       </ParragraphText>
-    </ParragraphContainer>
+    </div>
   </DisclaimerContainer>
     </Container>
   );

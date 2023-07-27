@@ -14,4 +14,8 @@ export const DisclaimerContainer = styled.div`
   max-width: 80%;
   align-self: center;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 `;

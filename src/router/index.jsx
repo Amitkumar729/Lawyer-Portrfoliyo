@@ -6,7 +6,8 @@ import { PracticeArea } from "../page/practiceArea";
 import Footer from "../component/footer";
 import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
-import Blog from "../page/blog";
+// import {Blog} from "../page/blog";
+import { Blog } from "../page/blog";
 import { PageDetails } from "../views/pageDetails";
 
 const Router = () => {
