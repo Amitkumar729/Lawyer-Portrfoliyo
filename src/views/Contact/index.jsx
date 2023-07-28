@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import CircularProgress from "@mui/material/CircularProgress";
 import { Alert } from "@mui/material";
 import { useState } from "react";
@@ -14,15 +14,15 @@ import {
   FormContainer,
   FormElementWrapper,
   FormHeading,
-  ImgContainer,
+  // ImgContainer,
   Input,
   InputError,
   InputTitle,
   TextAreaInput,
-  Img,
+  // Img,
   Wrapper,
 } from "../../styles/view/Contact";
-import React, { useRef } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 const ContactUs = () => {
   const [formSubmited, setFormSubmited] = useState(false);
