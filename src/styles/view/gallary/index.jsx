@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const GallaryContainer = styled.div`
   width: 100%;
-  align-self: center;
+  display: flex;
+  justify-content: center;
 `;
 
 export const GallaryWrapper = styled.div`
-  width: 100%;
+  width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;

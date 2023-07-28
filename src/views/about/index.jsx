@@ -2,12 +2,6 @@ import { AboutUs } from "../../component/about";
 import { users } from "../../constant/user";
 import profilePdf from "../../assets/documents/profile_2023.pdf";
 import { ImgaePdfWrap, PdfContainer } from "../../styles/component/about";
-// import { Heading } from "../../component/heading";
-// import {
-//   ParragraphContainer,
-//   ParragraphText,
-// } from "../../styles/view/pageDetails";
-// import { HeadingWrap } from "../../styles/component/heading";
 
 export const ViewAbout = () => {
   return (

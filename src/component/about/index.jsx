@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import ResumePdf from "../../assets/documents/Resume.pdf";
-import profilePdf from "../../assets/documents/profile_2023.pdf";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import aboutPhoto from "../../assets/images/about_photo.jpg";
-import profilePic from "../../assets/images/profilePic.jpg";
+// import profilePdf from "../../assets/documents/profile_2023.pdf";
+// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import aboutPhoto from "../../assets/images/about_photo.jpg";
+// import profilePic from "../../assets/images/profilePic.jpg";
 import { Heading } from "../heading";
-import { PageDetails } from "../../views/pageDetails";
+// import { PageDetails } from "../../views/pageDetails";
 
 import {
   AboutHeading,
@@ -18,11 +18,10 @@ import {
   RightAboutWrap,
   HeadingWrapper,
   DownloadButton,
-  PdfContainer,
-  ImgaePdfWrap,
 } from "../../styles/component/about";
 
 export const AboutUs = ({ name, parragraph, photo, isHeading, isDownload, direction }) => {
+
   const downloadPdf = (url) => {
     const aTag = document.createElement("a");
     aTag.href = url;
@@ -31,8 +30,6 @@ export const AboutUs = ({ name, parragraph, photo, isHeading, isDownload, direct
     aTag.click();
     aTag.remove();
   };
-
-
 
   return (
     <>
@@ -63,7 +60,7 @@ export const AboutUs = ({ name, parragraph, photo, isHeading, isDownload, direct
 
         <RightAboutWrap>
           <ImageWrap>
-            <img src={photo} />
+            <img src={photo} alt="" />
           </ImageWrap>
         </RightAboutWrap>
       </AboutWrapper>
