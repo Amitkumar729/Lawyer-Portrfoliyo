@@ -48,7 +48,7 @@ export const HeaderElemntContainer = styled.div`
   }
 `;
 
-export const MenuIcon_styled = styled(MenuIcon)`
+export const MenuIconStyled = styled(MenuIcon)`
   font-size: 30px;
   cursor: pointer;
   @media (min-width: 1050px) {

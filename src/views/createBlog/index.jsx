@@ -15,7 +15,7 @@ import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import { CircularProgress } from "@mui/material";
 
-export const ViewsBlog = () => {
+export const ViewsCreateBlog = () => {
   const [title, setTitle] = useState("");
   const [message,setMessage] = useState("")
   const [loader, setLoader] = useState(false);

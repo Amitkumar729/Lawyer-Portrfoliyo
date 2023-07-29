@@ -1,8 +1,8 @@
-import {ViewsBlog} from "../../views/createBlog"
+import {ViewsCreateBlog} from "../../views/createBlog"
 
 export const CreateBlog = () => {
   return (
-      <ViewsBlog/>
+      <ViewsCreateBlog/>
   );
 };
 

@@ -8,6 +8,8 @@ import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
 import { CreateBlog } from "../page/createBlog";
 import { PageDetails } from "../views/pageDetails";
+import {Blogs} from "../page/blog";
+import { BlogDetails } from "../page/blogDetails";
 
 const Router = () => {
   return (
@@ -21,6 +23,8 @@ const Router = () => {
         <Route path="/gallary" element={<Gallary />} />
         <Route path="/createblog" element={<CreateBlog />} />
         <Route path="/about" element={<PageDetails />} />
+        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/blogdetails" element={<BlogDetails/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

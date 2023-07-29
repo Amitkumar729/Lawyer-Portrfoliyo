@@ -9,7 +9,7 @@ import {
   HeaderRightWrap,
   HeaderElemntWrap,
   HeaderElemntContainer,
-  MenuIcon_styled,
+  MenuIconStyled,
 } from "../../styles/component/header";
 import { MyLink } from "../../styles/common";
 import Sidebar from "./sidebar";
@@ -38,7 +38,7 @@ const Header = () => {
               );
             })}
           </HeaderElemntContainer>
-          <MenuIcon_styled onClick={() => setSidebarOpen(!isSidebarOpen)} />
+          <MenuIconStyled onClick={() => setSidebarOpen(!isSidebarOpen)} />
         </HeaderRightWrap>
       </HeaderWraper>
       <Sidebar
