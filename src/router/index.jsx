@@ -6,8 +6,7 @@ import { PracticeArea } from "../page/practiceArea";
 import Footer from "../component/footer";
 import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
-// import {Blog} from "../page/blog";
-import { Blog } from "../page/blog";
+import { CreateBlog } from "../page/createBlog";
 import { PageDetails } from "../views/pageDetails";
 
 const Router = () => {
@@ -20,7 +19,7 @@ const Router = () => {
         <Route path="/practice-area" element={<PracticeArea />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallary" element={<Gallary />} />
-        <Route path="/blogs" element={<Blog />} />
+        <Route path="/createblog" element={<CreateBlog />} />
         <Route path="/about" element={<PageDetails />} />
       </Routes>
       <Footer />

@@ -1,13 +1,7 @@
 import React from "react";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import ResumePdf from "../../assets/documents/Resume.pdf";
-// import profilePdf from "../../assets/documents/profile_2023.pdf";
-// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-// import aboutPhoto from "../../assets/images/about_photo.jpg";
-// import profilePic from "../../assets/images/profilePic.jpg";
 import { Heading } from "../heading";
-// import { PageDetails } from "../../views/pageDetails";
 
 import {
   AboutHeading,

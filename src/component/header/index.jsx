@@ -20,17 +20,19 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderWraper isSidebarOpen={isSidebarOpen}>
-        <HeaderLeftWrap>
+        <MyLink to={"/createblog"}>  
+        <HeaderLeftWrap >
           <IconButton>
             <BalanceIcon sx={{ fontSize: "35px", color: "#180D33" }} />
           </IconButton>
           <h1>Justice</h1>
         </HeaderLeftWrap>
+        </MyLink>
         <HeaderRightWrap>
-          <HeaderElemntContainer>
+          <HeaderElemntContainer>     
             {element.map((item, index) => {
               return (
-                <MyLink to={item.to} key={index}>
+                <MyLink to={item.to} key={index}> 
                   <HeaderElemntWrap>{item.name}</HeaderElemntWrap>
                 </MyLink>
               );
