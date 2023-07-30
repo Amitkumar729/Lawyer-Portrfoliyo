@@ -53,6 +53,9 @@ export const DownloadButton = styled.div`
   &:hover {
     color: orange;
   }
+
+
+  
 `;
 
 export const RightAboutWrap = styled.div`
