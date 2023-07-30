@@ -14,6 +14,7 @@ import axios from "axios";
 import { baseApi } from "../../constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import parser from "html-react-parser"
 
 export const ViewsBlog = () => {
   const [blogs ,setBlogs] = useState([])
@@ -21,7 +22,7 @@ export const ViewsBlog = () => {
 
   const fetchBlogs = async() =>{
     const res = await axios.get(`${baseApi}/blog/get-all-blogs`)
-    setBlogs(res.data.data)
+    setBlogs(res.data.data?.reverse());
   }
 
   useEffect(()=>{
@@ -30,7 +31,7 @@ export const ViewsBlog = () => {
   return (
     <Container>
     <ContainerWrapper>
-    {element.map((item) => {
+    {blogs.map((item) => {
       return (
         <>
         <BlogContainer onClick={()=>{
@@ -39,7 +40,7 @@ export const ViewsBlog = () => {
         <HeadingContainer>
         <HeadingWrapper>{item.title}</HeadingWrapper>
         </HeadingContainer>
-        <BodyContainer>{item.body?.slice(0, 300)}...</BodyContainer>
+        <BodyContainer>{parser(item.body)}...</BodyContainer>
         <BodyEnding />
         </BlogContainer>
         </>

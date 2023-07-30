@@ -44,6 +44,8 @@ gap: 10px;
 `;
 export const BodyContainer = styled.div`
     width: 100%;
+    height: 100px;
+    overflow: hidden;
    
 
 `;
