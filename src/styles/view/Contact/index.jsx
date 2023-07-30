@@ -81,8 +81,9 @@ export const InputTitle = styled.h2`
   }
 `;
 export const Input = styled.input`
-  width: 98%;
-  height: 45px;
+width: 100%;
+max-width: 98%;
+height: 45px;
   font-size: 18px;
   border-radius: 2px;
   border: 2px solid #c2c2c2;

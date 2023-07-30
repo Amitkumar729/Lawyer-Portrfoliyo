@@ -3,13 +3,14 @@ import Header from "../component/header";
 import Home from "../page/home";
 import { About } from "../page/about";
 import { PracticeArea } from "../page/practiceArea";
-import Footer from "../component/footer";
+import Footer from "../component/Footer";
 import { Contact } from "../page/contact";
 import Gallary from "../views/gallary";
 import { CreateBlog } from "../page/createBlog";
 import { PageDetails } from "../views/pageDetails";
 import {Blogs} from "../page/blog";
 import { BlogDetails } from "../page/blogDetails";
+import { LoginPage } from "../page/login";
 
 const Router = () => {
   return (
@@ -25,6 +26,8 @@ const Router = () => {
         <Route path="/about" element={<PageDetails />} />
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/blogdetails" element={<BlogDetails/>} />
+        <Route path="/login" element={<LoginPage/>} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

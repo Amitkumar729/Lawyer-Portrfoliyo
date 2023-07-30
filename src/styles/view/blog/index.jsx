@@ -13,17 +13,27 @@ margin-top: 10px;
 `;
 export const ContainerWrapper = styled.div`
 max-width: 1400px;
-/* border: 1px solid red; */
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 20px;
 
 `;
 
 export const HeadingContainer = styled.div`
 width: 100%;
 height: 40px;
-/* border: 1px solid red; */
+`;
+
+export const BlogContainer = styled.div`
+width: 100%;
+max-width: 1000px;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 10px 10px 10px  lightgray;
+&:hover{
+    border: 1px solid orange;
+    cursor: pointer;
+}
 `;
 
 export const HeadingWrapper = styled.div`
@@ -34,11 +44,11 @@ gap: 10px;
 `;
 export const BodyContainer = styled.div`
     width: 100%;
-    /* border: 1px solid green; */
+   
+
 `;
 
 export const BodyEnding = styled.div`
     width: 100%;
-    border: 1px solid orange;
 
 `;

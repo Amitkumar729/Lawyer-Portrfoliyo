@@ -1,1 +1,1 @@
-export const baseApi = "https://lawyer-portfolio.onrender.com";
+export const baseApi = "http://localhost:3000";
