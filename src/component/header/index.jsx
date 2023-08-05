@@ -25,7 +25,7 @@ const Header = () => {
           <IconButton>
             <BalanceIcon sx={{ fontSize: "35px", color: "#180D33" }} />
           </IconButton>
-          <h1>Justice</h1>
+          <h1>LMI</h1>
         </HeaderLeftWrap>
         </MyLink>
         <HeaderRightWrap>

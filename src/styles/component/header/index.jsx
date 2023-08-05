@@ -20,7 +20,7 @@ export const HeaderWraper = styled.div`
 `;
 
 export const HeaderLeftWrap = styled.div`
-  width: 150px;
+  width: 100px;
   height: 50px;
   align-self: center;
   margin-left: 10px;
