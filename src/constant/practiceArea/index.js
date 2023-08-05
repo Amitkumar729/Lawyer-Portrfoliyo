@@ -36,6 +36,9 @@ export const Practices = [
     title: "RERA",
   },
   {
+    title: "Trade Marks & IPR",
+  },
+  {
     title: "Consumer Forum",
   },
   {
