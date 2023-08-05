@@ -33,7 +33,7 @@ const Footer = () => {
               { 
 
                 element.map((item, index) => {
-                  return <Link to = {item.to} > {item.name} </Link>
+                  return <Link to = {item.to} key={index} > {item.name} </Link>
                 })
 
                }

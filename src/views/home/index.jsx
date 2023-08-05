@@ -14,6 +14,7 @@ const Home = () => {
       {users.map((user, index) => {
         return (
           <AboutUs
+            key={index}
             isHome={true}
             name={user.name}
             parragraph={user.parragraph}

@@ -31,19 +31,19 @@ export const ViewsBlog = () => {
   return (
     <Container>
     <ContainerWrapper>
-    {blogs.map((item) => {
+    {blogs.map((item,index) => {
       return (
-        <>
-        <BlogContainer onClick={()=>{
+        
+        <BlogContainer key={index} onClick={()=>{
           navigate(`/blogdetails?id=${item?._id}`)
-        }} >
+        }}  >
         <HeadingContainer>
         <HeadingWrapper>{item.title}</HeadingWrapper>
         </HeadingContainer>
         <BodyContainer>{parser(item.body)}...</BodyContainer>
         <BodyEnding />
         </BlogContainer>
-        </>
+        
       );
     })}
 
