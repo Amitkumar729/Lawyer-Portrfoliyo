@@ -15,16 +15,20 @@ import { baseApi } from "../../constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import parser from "html-react-parser";
+import CircularProgress from "@mui/material/CircularProgress";
 
 
  const ViewsBlog = () => {
   const [blogs, setBlogs] = useState([]);
-  // const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(false);
+
   const navigate = useNavigate();
 
   const fetchBlogs = async () => {
+    setLoader(true);
     const res = await axios.get(`${baseApi}/blog/get-all-blogs`);
     setBlogs(res.data.data?.reverse());
+    setLoader(false);
   };
 
   useEffect(() => {
@@ -34,7 +38,8 @@ import parser from "html-react-parser";
     
     <Container>
       <ContainerWrapper>
-        {blogs.map((item) => {
+          { loader &&  <CircularProgress  sx={{color: "orange"}} />}
+        { blogs.length > 0 ? blogs.map((item) => {
           return (
             <>
               <BlogContainer
@@ -50,7 +55,8 @@ import parser from "html-react-parser";
               </BlogContainer>
             </>
           );
-        })}
+        }): !loader && <h4>There is no any Blog data</h4>}
+        
       </ContainerWrapper>
     </Container>
     

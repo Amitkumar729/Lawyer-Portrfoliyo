@@ -38,9 +38,9 @@ const ContactUs = () => {
     setLoader(!loader);
 
     const emailData = {
-      to: data.email,
-      subject: data.reason,
-      body: data.message,
+      from_name: `${data.name} Email is : ${data.email}`,
+      reason: data.reason,
+      message: data.message,
     };
 
     emailjs.send(
