@@ -36,8 +36,8 @@ export const PageDetails = () => {
             <Heading value="More About Us" />
           </ParragraphMainheading>
           <ParragraphWrapper>
-            {element1.map((item) => {
-              return <ParragraphText>{item.text}</ParragraphText>;
+            {element1.map((item , index) => {
+              return <ParragraphText key={index}>{item.text}</ParragraphText>;
             })}
           </ParragraphWrapper>
           <ParragraphMainheading>
@@ -45,10 +45,10 @@ export const PageDetails = () => {
           </ParragraphMainheading>
 
           <ParragraphWrapper>
-            {element2.map((item) => {
+            {element2.map((item,index) => {
               return (
                 <>
-                  <ParragraphSubHeading>
+                  <ParragraphSubHeading key={index}>
                     <ParragraphSubHeadingText>
                       {item.name}
                     </ParragraphSubHeadingText>

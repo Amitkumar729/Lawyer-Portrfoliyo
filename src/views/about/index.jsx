@@ -9,6 +9,7 @@ export const ViewAbout = () => {
       {users.map((user, index) => {
         return (
           <AboutUs
+          key={index}
             name={user.name}
             parragraph={user.parragraph}
             photo={user.photo}
