@@ -8,48 +8,60 @@ import {
   BodyEnding,
   BlogContainer,
 } from "../../styles/view/blog";
-import { element } from "../../constant/blogData";
+// import { element } from "../../constant/blogData";
 import { useState } from "react";
 import axios from "axios";
 import { baseApi } from "../../constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import parser from "html-react-parser"
+import parser from "html-react-parser";
+import CircularProgress from "@mui/material/CircularProgress";
 
-export const ViewsBlog = () => {
-  const [blogs ,setBlogs] = useState([])
-  const navigate = useNavigate()
 
-  const fetchBlogs = async() =>{
-    const res = await axios.get(`${baseApi}/blog/get-all-blogs`)
+ const ViewsBlog = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [loader, setLoader] = useState(false);
+
+  const navigate = useNavigate();
+
+  const fetchBlogs = async () => {
+    setLoader(true);
+    const res = await axios.get(`${baseApi}/blog/get-all-blogs`);
     setBlogs(res.data.data?.reverse());
-  }
+    setLoader(false);
+  };
 
-  useEffect(()=>{
-    fetchBlogs()
-  },[])
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
   return (
-    <Container>
-    <ContainerWrapper>
-    {blogs.map((item,index) => {
-      return (
-        
-        <BlogContainer key={index} onClick={()=>{
-          navigate(`/blogdetails?id=${item?._id}`)
-        }}  >
-        <HeadingContainer>
-        <HeadingWrapper>{item.title}</HeadingWrapper>
-        </HeadingContainer>
-        <BodyContainer>{parser(item.body)}...</BodyContainer>
-        <BodyEnding />
-        </BlogContainer>
-        
-      );
-    })}
-
     
-    </ContainerWrapper>
-     
+    <Container>
+      <ContainerWrapper>
+          { loader &&  <CircularProgress  sx={{color: "orange"}} />}
+        { blogs.length > 0 ? blogs.map((item) => {
+          return (
+            <>
+              <BlogContainer
+                onClick={() => {
+                  navigate(`/blogdetails?id=${item?._id}`);
+                }}
+              >
+                <HeadingContainer>
+                  <HeadingWrapper>{item.title}</HeadingWrapper>
+                </HeadingContainer>
+                <BodyContainer>{parser(item.body)}...</BodyContainer>
+                <BodyEnding />
+              </BlogContainer>
+            </>
+          );
+        }): !loader && <h4>There is no any Blog data</h4>}
+        
+      </ContainerWrapper>
     </Container>
+    
   );
 };
+
+
+export default ViewsBlog;
