@@ -58,7 +58,7 @@ import CircularProgress from "@mui/material/CircularProgress";
         }): !loader && <h4>There is no any Blog data</h4>}
         
       </ContainerWrapper>
-    </Container>
+    </Container> 
     
   );
 };
