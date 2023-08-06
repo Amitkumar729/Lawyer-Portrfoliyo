@@ -17,6 +17,7 @@ export const Login = ()=>{
     if(loader) return;
     setLoader(true)
     const {data} = await axios.post(`${baseApi}/auth`,formData)
+    console.log(data);
     setMessage({
         message:  data?.message,
         type: data?.error ||  data?.success,
