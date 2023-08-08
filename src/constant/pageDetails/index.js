@@ -1,6 +1,6 @@
 export const element1 = [
   {
-    text: "Legal Minds International is a pioneer law firm set up in New Delhi, India by former Law Officers of GAIL(India) Ltd., with the sole intention of making the legal services available in a more efficient, cost effective and time bound manner. The advocates at Legal Minds International have got thorough domain knowledge on various issues and problems of Industrial Sector.",
+    text: "Legal Minds International is a pioneer law firm set up in New Delhi, India by former Law Officers of GAIL(India) Ltd., with the sole intention of making the legal services available in a more efficient, cost effective and time bound matter. The advocates at Legal Minds International have got thorough domain knowledge on various issues and problems of Industrial Sector.",
   },
 
   {
