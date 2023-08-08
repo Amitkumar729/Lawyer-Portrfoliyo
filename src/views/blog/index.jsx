@@ -8,7 +8,6 @@ import {
   BodyEnding,
   BlogContainer,
 } from "../../styles/view/blog";
-// import { element } from "../../constant/blogData";
 import { useState } from "react";
 import axios from "axios";
 import { baseApi } from "../../constant";

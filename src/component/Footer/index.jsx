@@ -39,7 +39,7 @@ const Footer = () => {
                }
           </MoreInfo>
           <FollowSection>
-            <FollowHeading>Registered Office</FollowHeading>
+            <FollowHeading>Office Address</FollowHeading>
 
             <Address>109A, Pocket-F, Mayur Vihar Phase-2, Delhi-110096</Address>
           </FollowSection>
