@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, HashRouter } from "react-router-dom";
 import Header from "../component/header";
 import Home from "../page/home";
 import { About } from "../page/about";
@@ -14,7 +14,7 @@ import { LoginPage } from "../page/login";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,10 +27,11 @@ const Router = () => {
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/blogdetails" element={<BlogDetails/>} />
         <Route path="/login" element={<LoginPage/>} />
+        <Route path="/*" element={<Navigate to = "/" />} />
 
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
