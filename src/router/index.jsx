@@ -14,7 +14,7 @@ import { LoginPage } from "../page/login";
 
 const Router = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,11 +27,10 @@ const Router = () => {
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/blogdetails" element={<BlogDetails/>} />
         <Route path="/login" element={<LoginPage/>} />
-        <Route path="/*" element={<Navigate to = "/" />} />
 
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
